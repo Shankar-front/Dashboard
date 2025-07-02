@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1>Company Dashboard</h1>
+                <div class="user-info">
+                    <span>Welcome, Admin</span>
+                </div>
+            </div>
+            <button class="sidebar-toggle">☰</button>
+        </header>
+        
+        <main class="dashboard-main">
+            <aside class="sidebar">
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li class="active"><a href="#" data-tab="overview">Overview</a></li>
+                        <li><a href="#" data-tab="analytics">Analytics</a></li>
+                        <li><a href="#" data-tab="reports">Reports</a></li>
+                        <li><a href="#" data-tab="settings">Settings</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <section class="content-area">
+                <div class="dashboard-widgets">
+                    
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <template id="widget-template">
+        <div class="widget">
+            <div class="widget-header">
+                <h3 class="widget-title">Widget Title</h3>
+                <div class="widget-actions">
+                    <button class="widget-refresh">↻</button>
+                    <button class="widget-remove">×</button>
+                </div>
+            </div>
+            <div class="widget-content">
+                <!-- Content will be added here -->
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
